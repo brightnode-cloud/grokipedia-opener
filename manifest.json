@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Grokipedia Opener",
+  "version": "1.0",
+  "description": "When you visit a Wikipedia page, this extension gives you the option to open the same article on Grokipedia.",
+  "permissions": [
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.wikipedia.org/wiki/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
